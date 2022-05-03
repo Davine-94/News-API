@@ -29,7 +29,8 @@ a:hover {
 
 .tagline {
   text-align: center;
-  margin: 200px auto;
+  margin-bottom: 20px;
+  margin-left: 300px;
   width: 60vw;
   font-family: "Poppins", sans-serif;
   font-style: italic;
