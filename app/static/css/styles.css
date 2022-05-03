@@ -49,10 +49,10 @@ a:hover {
 .articles {
   font-family: Poppins;
   background: #37d8b5;
-  box-shadow: 0px 20px 20px 4px rgba(4, 13, 33, 0.15);
+  box-shadow: 0px 20px 20px 4px rgba(223, 135, 211, 0.15);
   border-radius: 10px;
   margin: 20px 0;
-  padding: 20px;
+  padding: 10px;
 }
 
 .sources:hover {
