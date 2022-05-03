@@ -1,0 +1,39 @@
+{% macro listSources(sources_list) %}
+<div class="row" id="row">
+  {% for source in sources_list %}
+  <div class="col-lg-4">
+    <a href="/articles/{{source.id}}" target="_blank">
+      <div class="sources">
+        <li>
+          <div class="heading">{{source.name|truncate(20)}}</div>
+          <div class="sub-heading">{{source.description|truncate(100)}}</div>
+        </li>
+      </div>
+    </a>
+  </div>
+  {% endfor %}
+</div>
+
+{% endmacro %} {% macro listArticles(articles_list) %}
+<div class="items">
+  {% for article in articles_list %}
+  <div class="articles">
+    <li>
+      <div>
+        <img src="{{article.urlToImage}}" alt="" class="w-100 img-thumbnail" />
+      </div>
+      <div class="credits">
+        <p id="article">{{article.title}}</p>
+        <p id="description">{{article.description}}</p>
+        <p id="published">
+          {{article.publishedAt|truncate(13)}} | {{article.author}}
+        </p>
+        <a href="{{article.url}}" target="_blank"
+          ><button>Go to Story</button></a
+        >
+      </div>
+    </li>
+  </div>
+  {% endfor %}
+</div>
+{% endmacro %}
